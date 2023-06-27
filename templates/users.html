@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List od user data</title>
+</head>
+<body>
+
+
+<table>
+    <tr>
+      <th>First Name</th>
+      <th>Adhar Number</th>
+      <th>Unique ID</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+      <td>{{ user.first_name }}</td>
+      <td>{{ user.aadhaar_number }}</td>
+      <td>{{ user.unique_id }}</td>
+    </tr>
+    {% endfor %}
+ 
+  </table>
+    
+</body>
+</html>
